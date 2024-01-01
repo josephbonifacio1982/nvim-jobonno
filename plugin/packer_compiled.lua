@@ -150,6 +150,11 @@ _G.packer_plugins = {
     path = "/Users/josephbonifacio/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
+  ["telescope-ui-select.nvim"] = {
+    loaded = true,
+    path = "/Users/josephbonifacio/.local/share/nvim/site/pack/packer/start/telescope-ui-select.nvim",
+    url = "https://github.com/nvim-telescope/telescope-ui-select.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/josephbonifacio/.local/share/nvim/site/pack/packer/start/telescope.nvim",
