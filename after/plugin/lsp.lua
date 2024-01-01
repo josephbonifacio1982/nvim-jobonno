@@ -1,6 +1,6 @@
 local lsp_zero = require('lsp-zero')
 
-lsp_zero.on_attach(function(client, bufnr)
+lsp_zero.on_attach(function(_, bufnr)
   lsp_zero.default_keymaps({buffer = bufnr})
 end)
 
@@ -18,6 +18,8 @@ cmp.setup({
 		['<C-Space'] = cmp.mapping.complete()
 	}),
 })
+
+vim.keymap.set({ 'n', 'v' }, '<Leader>ca', vim.lsp.buf.code_action, opts)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
