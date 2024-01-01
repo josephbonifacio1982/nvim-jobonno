@@ -17,7 +17,6 @@ cmp.setup({
 		['<S-Tab>'] = cmp_action.select_prev_or_fallback(),
 		['<C-Space'] = cmp.mapping.complete()
 	}),
-	
 })
 
 require('mason').setup({})
